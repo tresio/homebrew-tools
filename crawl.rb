@@ -5,20 +5,20 @@
 class Crawl < Formula
   desc ""
   homepage "https://github.com/tresio/homebrew-tools"
-  version "1.0.6"
+  version "1.0.7"
 
   on_macos do
     on_intel do
-      url "https://github.com/tresio/site-crawler/releases/download/v1.0.6/site-crawler_Darwin_x86_64.tar.gz"
-      sha256 "2b752877680ec44560de9f1b4e41645aa36280b6ce4d32f8fc590ef4c7f2e9f7"
+      url "https://github.com/tresio/site-crawler/releases/download/v1.0.7/site-crawler_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "7c2f1e3fdf0cd09da272f45c05865cddae124f5010f56d10b3d2247e7fc0c2c4"
 
       def install
         bin.install "site-crawler"
       end
     end
     on_arm do
-      url "https://github.com/tresio/site-crawler/releases/download/v1.0.6/site-crawler_Darwin_arm64.tar.gz"
-      sha256 "32c326e42dfd59d1fd42f7a6534a36eb262b82aa8793f4c021a78e2bb43fbe11"
+      url "https://github.com/tresio/site-crawler/releases/download/v1.0.7/site-crawler_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "cffccddd155a64540426143a9db79feb5d185cb93c0cd8b0bf622fd7081d9503"
 
       def install
         bin.install "site-crawler"
@@ -29,8 +29,8 @@ class Crawl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tresio/site-crawler/releases/download/v1.0.6/site-crawler_Linux_x86_64.tar.gz"
-        sha256 "89f82349c00b59bfb503858837bf1d4199417aebfbde01aae93f4fab41762e0c"
+        url "https://github.com/tresio/site-crawler/releases/download/v1.0.7/site-crawler_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "3475f04238df3e7201b2ca0fb27689d70e3922374ee963252529548bbdfd0252"
 
         def install
           bin.install "site-crawler"
@@ -39,8 +39,8 @@ class Crawl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tresio/site-crawler/releases/download/v1.0.6/site-crawler_Linux_arm64.tar.gz"
-        sha256 "eb90aec3f7fcd7799085f1b51c1187fde8f561b132c25aaaf748b5f2a48cafb4"
+        url "https://github.com/tresio/site-crawler/releases/download/v1.0.7/site-crawler_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "b6d5f75382045bb8278825ea347ebaa647353be63d58130808a257f07bbe6315"
 
         def install
           bin.install "site-crawler"
